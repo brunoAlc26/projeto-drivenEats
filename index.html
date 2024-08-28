@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Righteous&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="barra_topo">
+            <div class="titulo">Driven Eats</div>
+        </div>
+        <div class="conteudo">
+            <div class="prato_principal">
+                <p class="conteudo_titulo">Primeiro, seu prato</p>
+                <div class="opcoes">
+                    <button class="prato1" onclick="selecionarComida('prato1')">
+                        <img src="projeto__driven-eats__imagens/pf_calabresa.png" class="imagem_botao">
+                        <div class="descricao_comida">
+                            <p class="texto_descricao_principal">PF de calabresa</p>
+                            <p class="texto_descricao_secundario">Arroz, feijao, batata e calabresa</p> 
+                            <p class="texto_descricao_valor">R$ 14,90</p>
+                        </div>
+                    </button>
+                    <button class="prato2" onclick="selecionarComida('prato2')">
+                        <img src="projeto__driven-eats__imagens/pf_carne.jpg" class="imagem_botao">
+                        <div class="descricao_comida">
+                            <p class="texto_descricao_principal">PF de carne</p>
+                            <p class="texto_descricao_secundario">Arroz, feijao, batata e carne</p> 
+                            <p class="texto_descricao_valor">R$ 19,90</p>
+                        </div>
+                    </button>
+                    <button class="prato3" onclick="selecionarComida('prato3')">
+                        <img src="projeto__driven-eats__imagens/pf_frango.jpg" class="imagem_botao">
+                        <div class="descricao_comida">
+                            <p class="texto_descricao_principal">PF de frango</p>
+                            <p class="texto_descricao_secundario">Arroz, feijao, batata e frango</p> 
+                            <p class="texto_descricao_valor">R$ 14,90</p>
+                        </div>
+                    </button>
+                    <button class="prato4" onclick="selecionarComida('prato4')">
+                        <img src="projeto__driven-eats__imagens/pf_peixe..jpg" class="imagem_botao">
+                        <div class="descricao_comida">
+                            <p class="texto_descricao_principal">PF de peixe</p>
+                            <p class="texto_descricao_secundario">Arroz, feijao, batata e peixe</p> 
+                            <p class="texto_descricao_valor">R$ 19,90</p>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+            <div class="bebida">
+                <p class="conteudo_titulo">Agora, sua bebida</p>
+                <div class="opcoes">
+                    <button class="bebida1" onclick="selecionarBebida('bebida1')">
+                        <img src="projeto__driven-eats__imagens/coca.png" class="imagem_botao">
+                        <div class="descricao_comida">
+                            <p class="texto_descricao_principal">Coca-cola</p>
+                            <p class="texto_descricao_secundario">Lata 350 ml</p> 
+                            <p class="texto_descricao_valor">R$ 6,90</p>
+                        </div>
+                    </button>
+                    <button class="bebida2" onclick="selecionarBebida('bebida2')">
+                        <img src="projeto__driven-eats__imagens/fanta.png" class="imagem_botao">
+                        <div class="descricao_comida">
+                            <p class="texto_descricao_principal">Fanta</p>
+                            <p class="texto_descricao_secundario">Lata 350 ml</p> 
+                            <p class="texto_descricao_valor">R$ 6,90</p>
+                        </div>
+                    </button>
+                    <button class="bebida3" onclick="selecionarBebida('bebida3')">
+                        <img src="projeto__driven-eats__imagens/suco.png" class="imagem_botao">
+                        <div class="descricao_comida">
+                            <p class="texto_descricao_principal">Suco de laranja</p>
+                            <p class="texto_descricao_secundario">Lata 350 ml</p> 
+                            <p class="texto_descricao_valor">R$ 9,90</p>
+                        </div>
+                    </button>
+                    <button class="bebida4" onclick="selecionarBebida('bebida4')">
+                        <img src="projeto__driven-eats__imagens/agua.jpg" class="imagem_botao">
+                        <div class="descricao_comida">
+                            <p class="texto_descricao_principal">Agua</p>
+                            <p class="texto_descricao_secundario">Garrafa 500 ml</p> 
+                            <p class="texto_descricao_valor">R$ 4,90</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="sobremesa">
+                <p class="conteudo_titulo">Por fim, sua sobremesa</p>
+                <div class="opcoes">
+                    <button class="sobremesa1" onclick="selecionarSobremesa('sobremesa1')">
+                        <img src="projeto__driven-eats__imagens/brownie.jpg" class="imagem_botao">
+                        <div class="descricao_comida">
+                            <p class="texto_descricao_principal">Brownie</p>
+                            <p class="texto_descricao_secundario">Brownie de chocolate</p> 
+                            <p class="texto_descricao_valor">R$ 7,90</p>
+                        </div>
+                    </button>
+                    <button class="sobremesa2" onclick="selecionarSobremesa('sobremesa2')">
+                        <img src="projeto__driven-eats__imagens/mouse.jpg" class="imagem_botao">
+                        <div class="descricao_comida">
+                            <p class="texto_descricao_principal">Mouse</p>
+                            <p class="texto_descricao_secundario">Mouse de mmaracuja</p> 
+                            <p class="texto_descricao_valor">R$ 9,90</p>
+                        </div>
+                    </button>
+                    <button class="sobremesa3" onclick="selecionarSobremesa('sobremesa3')">
+                        <img src="projeto__driven-eats__imagens/pudim.jpg" class="imagem_botao">
+                        <div class="descricao_comida">
+                            <p class="texto_descricao_principal">Pudim</p>
+                            <p class="texto_descricao_secundario">Pudim de leite</p> 
+                            <p class="texto_descricao_valor">R$ 9,90</p>
+                        </div>
+                    </button>
+                    <button class="sobremesa4" onclick="selecionarSobremesa('sobremesa4')">
+                        <img src="projeto__driven-eats__imagens/milkshake.jpg" class="imagem_botao">
+                        <div class="descricao_comida">
+                            <p class="texto_descricao_principal">Milk shake</p>
+                            <p class="texto_descricao_secundario">Milk shake de oreo</p> 
+                            <p class="texto_descricao_valor">R$ 10,90</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="barra_base">
+            <div class="finalizarPedido">
+                <button class="botaoConfirmar" id="botaoConfirmar" onclick="janelaConfirmarPedido()">Selecione os 3 itens para fechar o pedido</button>
+            </div>
+        </div>
+        <div class="confirmarPedido escondido">
+            <div class="tituloConfirmarPedido negrito">
+                <p>Confirme seu pedido</p>
+            </div>
+            <div class="textoConfirmarPedido">
+                <div class="nomePedido">
+                    <p id="nomePrato" class="textoPratosConfirmar">Prato</p>
+                    <p id="nomeBebida" class="textoPratosConfirmar">Bebida</p>
+                    <p id="nomeSobremesa" class="textoPratosConfirmar">Sobremesa</p>
+                    <p id="nomeTotal" class="textoPratosConfirmar negrito">Total</p>
+                </div>
+                <div class="valorPedido">
+                    <p id="valorPrato" class="textoValorPratosConfirmar">Valor Prato</p>
+                    <p id="valorBebida" class="textoValorPratosConfirmar">Valor Bebida</p>
+                    <p id="valorSobremesa" class="textoValorPratosConfirmar">Valor Sobremesa</p>
+                    <p id="valorTotal" class="textoValorPratosConfirmar negrito">Valor total</p>
+                </div>
+            </div>
+            <div class="botoes">
+                <button class="botoes pedir" onclick="pedir()">Tudo certo, pode pedir!</button>
+                <button class="botoes sair" onclick="cancelarConfirmacao()">Cancelar</button>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html> 

@@ -1,0 +1,274 @@
+body{
+    background-color: #E5E5E5;
+    z-index: 1;
+}
+
+/* ----------------------------------------------------------------- */
+
+.barra_topo{
+    background-color: rgb(165, 5, 5);
+    height: 10%;
+    width: 600px;
+    position: fixed;
+    align-content: center;
+    padding-left: 10px;
+}
+
+.barra_topo .titulo{
+    font-size: 50px;
+    font-family: 'Righteous', sans-serif;
+    color: white;
+}
+
+/* ----------------------------------------------------------------- */
+
+.conteudo{
+    width: 600px;
+    bottom: 10%;
+    top: 10%;
+    position: fixed;
+}
+
+.conteudo_titulo{
+    font-size: 30px;
+    font-family: 'Righteous', sans-serif;
+    color: black;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.selecionado{
+    border-color: green;
+    border-style: solid;
+    border-width: 5px;
+   /* background-color: green; */
+}
+
+.prato_principal{
+    height: 33.333%;
+    width: 100%;
+}
+
+.opcoes{
+    overflow-x: scroll;
+    display: flex;
+    white-space: nowrap;
+}
+
+.opcoes::-webkit-scrollbar{
+    background: transparent;
+}
+
+.imagem_botao{
+    width: 100%;
+    height: 50%;
+    margin-top: 5px;
+    border-radius: 5%;
+}
+.descricao_comida{
+    width: 100%;
+    height: 50%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.texto_descricao_principal, .texto_descricao_secundario, .texto_descricao_valor {
+    color: black;
+    font-size: 15px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: left;
+    overflow-wrap: break-word; 
+    word-wrap: break-word;
+}
+
+.texto_descricao_secundario {
+    font-size: 10px;
+    color: grey;
+}
+
+.prato1, .prato2, .prato3, .prato4{
+    width: 170px;
+    height: 170px;
+    margin: 10px 10px 0px 10px;
+    flex-shrink: 0;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.bebida{
+    height: 33.333%;
+    width: 100%;
+}
+
+.bebida1, .bebida2, .bebida3, .bebida4{
+    width: 170px;
+    height: 170px;
+    margin: 10px 10px 0px 10px;
+    flex-shrink: 0;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.sobremesa{
+    height: 33.333%;
+    width: 100%;
+}
+
+.sobremesa1, .sobremesa2, .sobremesa3, .sobremesa4{
+    width: 170px;
+    height: 170px;
+    margin: 10px 10px 0px 10px;
+    flex-shrink: 0;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----------------------------------------------------------------- */
+
+.barra_base{
+    background-color: white;
+    height: 10%;
+    bottom: 0;
+    position: fixed; 
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.botaoConfirmar{
+    width: 80vw; 
+    max-width: 500px; 
+    min-width: 200px; 
+    height: 10vh;
+    max-height: 60px; 
+    min-height: 40px; 
+    border-radius: 20%;
+    font-size: 100%; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.ativo{
+    background-color: green;
+    cursor: pointer;
+} 
+
+
+.confirmarPedido{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    height: 40%;
+    width: 90%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: green;
+    border-radius: 3%;
+    z-index: 100;
+    font-size: 130%;
+}
+
+.escondido{
+    display: none;
+} 
+
+.borrar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9); 
+    z-index: 5; 
+    transition: background-color 0.3s ease;
+
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+.textoConfirmarPedido{
+    width: 100%;
+    height: 45%;
+    /* background-color: blue; */
+    display: flex;
+}
+
+.tituloConfirmarPedido{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nomePedido{
+    width: 50%;
+    height: 70%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.valorPedido{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    margin-right: 20px;
+    width: 50%;
+    height: 70%;
+    /* background-color: purple; */
+}
+
+.botoes{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.botoes .pedir, .botoes .sair{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Roboto', sans-serif;
+    font-size: 130%;
+    width: 80%;
+    height: 50%;
+    border-radius: 30%;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.botoes .pedir{
+    color: green;
+    border-color: transparent;
+}
+
+.botoes .sair{
+    background-color: transparent;
+    border-color: transparent;
+}
